@@ -1,7 +1,7 @@
 *
 {
-    margin: 0;
-    padding: 0;
+    margin: 0 ;
+    padding: 0 ;
 }
 
 .hero{
@@ -122,7 +122,32 @@
     
 }
 
-/*start 0f body css sntax*/
-body{
-    height: 50%;
+/* Mobile phones (portrait and landscape) ---------- */
+@media screen and (max-width: 767px){
+    .container {
+        width: 100%;
+        padding: 5px 10px;
+        margin: 10px;
+    }
+}
+/* Tablets and iPads (portrait and landscape) ---------- */
+@media screen and (min-width: 300px) and (max-width: 1023px){
+    .container {
+        width:780px;
+        padding: 5px 10px;
+    }
+}
+/* Low resolution desktops and laptops ---------- */
+@media screen and (min-width: 1024px) {
+    .container {
+        width:800px;
+        padding: px 15px;
+    }
+}
+/* High resolution desktops and laptops ---------- */
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1200px;
+        padding: 5px 20px;
+    }
 }
